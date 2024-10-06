@@ -1,24 +1,28 @@
 import { useState } from "react";
 import Modal from "./Modal";
+import bgImage from "../images/bgImg.jpg"
+import { SendHorizonal } from 'lucide-react';
 
 function MainPage() {
 
   const [showModal, setShowModal] = useState(false)
 
   return (
-    <div className=" w-full h-screen flex flex-col border border-black ">
-      <div className="">
+    <div className=" w-full h-screen flex flex-col " style={{
+      backgroundImage: `url(${bgImage})`,
+      backgroundPosition: 'center',
+      backgroundRepeat: "no-repeat",
+      backgroundSize: 'cover'
+    }}>
         {/* Content */}
-        <div className='border border-red-700 flex justify-center container mx-auto h-16 p-4'>
-          <h1>Our Guide... Your Flavourful Creations</h1>
-        </div>
-        <div className='border border-blue-800 flex mt-12 h-[20rem] justify-between'>
-          <div className='border border-black w-[35rem] flex flex-col justify-center gap-14 p-2'>
-            <p className='font-bold font-serif'>Never feel lost in the kitchen again. Our app provides clear, step-by-step instructions and helpful tips to ensure your cooking success. From prepping ingredients to plating your dish, we guide you through every stage of the cooking process. Let's make every dish a masterpiece!</p>
-            <button className='border border-black rounded-xl w-[18rem] font-bold font-serif' onClick={()=>setShowModal(true)}>Lets Start</button>
+        <div className='my-auto'>
+          <div className='text-white flex flex-col justify-center w-[60%] h-[20rem] px-4 text-justify mx-auto gap-8 backdrop-filter backdrop-blur-md bg-opacity-15 rounded-lg border border-gray-500'>
+            <h1 className="text-3xl font-serif font-bold px-4">Our Guide... Your Flavourful Creations</h1>
+            <p className='font-serif font-semibold '>Never feel lost in the kitchen again. Our app provides clear, step-by-step instructions and helpful tips to ensure your cooking success. From prepping ingredients to plating your dish, we guide you through every stage of the cooking process. Let's make every dish a masterpiece!</p>
+            <button className='border border-gray-500 bg-slate-200 text-black font-serif font-medium rounded-md w-36 flex gap-3 px-4' onClick={()=>setShowModal(true)}>
+              Lets Start <SendHorizonal /></button>
           </div>
         </div>
-      </div>
       {showModal && <Modal onClose={() => setShowModal(false)}/>}
     </div>
     
