@@ -3,7 +3,7 @@ import Modal from "./Modal";
 import bgImage from "../images/bgImg.jpg"
 import { SendHorizonal } from 'lucide-react';
 
-function MainPage() {
+const MainPage : React.FC = () => {
 
   const [showModal, setShowModal] = useState(false)
 
