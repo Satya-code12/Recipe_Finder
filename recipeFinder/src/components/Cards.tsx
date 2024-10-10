@@ -1,13 +1,13 @@
-import React from 'react'
-
 const Cards = () => {
   return (
-    <div className=''>
-      <img src="https://www.kikkoman.com/en/cookbook/assets/img/GlossaryCabbage.jpg" alt="Cabbage" />
-      <p>Cabbage</p>
-      <p>Quantity</p>
-      <button>+</button>
-      <button>-</button>
+    <div className="w-32 text-lg font-medium text-[#C5C6C7] border border-white" >
+      <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXo1pTXhMFZ52F1Ydkf5Qd7yrdSOrGfYMIQA&s" alt="" /></div>
+      <p>Cauliflower</p>
+      <div className="flex gap-1 p-1 bg-[#1F2833] ">
+       <p >Quantity</p>
+       <button className="font-extrabold hover:bg-blue-400 h-auto w-6">+</button>
+       <button className="font-extrabold hover:bg-blue-400 h-auto w-6">-</button>
+      </div>
     </div>
   )
 }

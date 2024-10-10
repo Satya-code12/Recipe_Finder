@@ -1,26 +1,37 @@
-import React from 'react'
+import { useNavigate } from "react-router-dom"
+import "../App.css"
 
-function FoodCatalogue() {
+const FoodCatalogue = () => {
 
-  const handleVeg = () =>{
+const navigate = useNavigate()
+const handleVeg =()=>{
+  navigate("/VegSection")
+}
 
-  }
-
-  return (
-   // main body
-    <section className='h-screen w-full'>
-     {/* Heading */}
-     <div className='border border-black flex justify-center text-2xl'>
-      <h1>What's in My Pantry?</h1>
-     </div>
-     {/* Sidebar */}
-     <div className='border border-black flex flex-col h-[93%] w-32 text-center  gap-10'>
-      <span className='border border-yellow-500 mt-5 text-xl'>Variety</span>
-      <div className='border border-yellow-700 flex flex-col-reverse h-[40rem] justify-evenly'>
-       <button className='border border-yellow-700 transform -rotate-90 text-xl tracking-[.35rem]'onClick={handleVeg}>Veg</button><br />
-       <button className='border border-yellow-700 transform -rotate-90 text-xl tracking-[.35rem]' >Non-Veg</button>
+  return ( 
+    <section className="h-screen w-full p-3" style={{
+      backgroundColor: "#0B0C10"
+    }}>
+      <nav className=" border border-black flex flex-col w-[10rem] h-full p-2 gap-3 rounded-lg" style={{
+      backgroundColor: "#1F2833"
+    }}>
+        <h1 className="text-center text-3xl font-medium"  style={{
+        fontFamily: "myFont",
+        color: "#66FCF1"
+      }}>Your Pantry!</h1>
+      <hr className="bg-[#45A29E] h-[.2rem] "/>
+        <div className="flex flex-col gap-8 mt-5 " style={{
+          color: "#C5C6C7"
+        }}>
+          <button className="bg-[#45A29E] rounded-md h-9 font-bold text-base">History</button>
+          <button className="bg-[#45A29E] rounded-md h-9 font-bold text-base" onClick={handleVeg}>Veg Items</button>
+          <button className="bg-[#45A29E] rounded-md h-9 font-bold text-base">Non-Veg Items</button>
+          <button className="bg-[#45A29E] rounded-md h-9 font-bold text-base">Quick Foods</button>
+          <button className="bg-[#45A29E] rounded-md h-9 font-bold text-base">Snacks</button>
+        </div>
+      </nav>
+      <div>
       </div>
-     </div>
     </section>
   )
 }
