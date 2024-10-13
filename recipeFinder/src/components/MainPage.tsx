@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Modal from "./Modal";
-import bgImage from "../images/bgImg.jpg"
+import bgImage from "../images/bgImage.jpg"
 import { SendHorizonal } from 'lucide-react';
 
 const MainPage : React.FC = () => {

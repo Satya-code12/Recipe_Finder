@@ -5,11 +5,17 @@ const FoodCatalogue = () => {
 
 const navigate = useNavigate()
 const handleVeg =()=>{
+  console.log("clicked");
   navigate("/VegSection")
 }
 
+const handleNonveg = () =>{
+  console.log("button clicked");
+  navigate("/NonVegSection")
+}
+
   return ( 
-    <section className="h-screen w-full p-3" style={{
+    <section className="h-screen w-full p-3 flex gap-x-[30%]" style={{
       backgroundColor: "#0B0C10"
     }}>
       <nav className=" border border-black flex flex-col w-[10rem] h-full p-2 gap-3 rounded-lg" style={{
@@ -25,12 +31,15 @@ const handleVeg =()=>{
         }}>
           <button className="bg-[#45A29E] rounded-md h-9 font-bold text-base">History</button>
           <button className="bg-[#45A29E] rounded-md h-9 font-bold text-base" onClick={handleVeg}>Veg Items</button>
-          <button className="bg-[#45A29E] rounded-md h-9 font-bold text-base">Non-Veg Items</button>
+          <button className="bg-[#45A29E] rounded-md h-9 font-bold text-base" onClick={handleNonveg}>Non-Veg Items</button>
           <button className="bg-[#45A29E] rounded-md h-9 font-bold text-base">Quick Foods</button>
           <button className="bg-[#45A29E] rounded-md h-9 font-bold text-base">Snacks</button>
         </div>
       </nav>
-      <div>
+      <div className="flex items-center">
+        <h1 className="text-white text-4xl" style={{
+          fontFamily: "myFont"
+        }}>[Please choose your Items...]</h1>
       </div>
     </section>
   )
