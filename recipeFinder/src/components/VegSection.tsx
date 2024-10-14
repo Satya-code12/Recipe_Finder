@@ -1,9 +1,14 @@
-// import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import "../App.css"
 import Cards from "./Cards"
 import vegCarddata from "./VegData"
 
 const VegSection: React.FC = () => {
+
+  const navigate = useNavigate()
+  const handleNonveg = () =>{
+    navigate("/NonVegSection")
+  }
 
   return ( 
     <section className="h-screen w-full p-3 flex gap-10" style={{
@@ -22,7 +27,7 @@ const VegSection: React.FC = () => {
         }}>
           <button className="bg-[#45A29E] rounded-md h-9 font-bold text-base">History</button>
           <button className="bg-[#45A29E] rounded-md h-9 font-bold text-base">Veg Items</button>
-          <button className="bg-[#45A29E] rounded-md h-9 font-bold text-base">Non-Veg Items</button>
+          <button className="bg-[#45A29E] rounded-md h-9 font-bold text-base" onClick={handleNonveg}>Non-Veg Items</button>
           <button className="bg-[#45A29E] rounded-md h-9 font-bold text-base">Quick Foods</button>
           <button className="bg-[#45A29E] rounded-md h-9 font-bold text-base">Snacks</button>
         </div>

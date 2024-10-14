@@ -60,6 +60,14 @@ const vegCardData: vegCardDataProps[] =[
   imageUrl: "https://www.bigbasket.com/media/uploads/p/xl/10000380_10-fresho-papaya-raw.jpg",
   naame: "raw Papaya"
  },
+ {
+  imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWH2ASpJeTk5KPLjKskr6VZ_Iwx9FW7JaFZQ&s",
+  naame: "Paneer"
+ },
+ {
+  imageUrl: "https://m.media-amazon.com/images/I/71XMKwfQCzL._AC_UF1000,1000_QL80_.jpg",
+  naame: "Mushroom"
+ },
 ];
 
 export default vegCardData

@@ -1,9 +1,14 @@
-// import { useNavigate } from "react-router-dom"
+import { Navigate, useNavigate } from "react-router-dom"
 import "../App.css"
-import Cards from "./Cards"
+import NonCard from "./NonCard"
+import nonVegData from "./NonvegData"
 
-const NonVegSec = () => {
+const NonVegSec : React.FC = () => {
 
+  const navigate = useNavigate()
+  const handleVeg = () =>{
+    navigate("/VegSection")
+  }
 
   return ( 
     <section className="h-screen w-full p-3 flex gap-14" style={{
@@ -21,32 +26,20 @@ const NonVegSec = () => {
           color: "#C5C6C7"
         }}>
           <button className="bg-[#45A29E] rounded-md h-9 font-bold text-base">History</button>
-          <button className="bg-[#45A29E] rounded-md h-9 font-bold text-base">Veg Items</button>
+          <button className="bg-[#45A29E] rounded-md h-9 font-bold text-base" onClick={handleVeg}>Veg Items</button>
           <button className="bg-[#45A29E] rounded-md h-9 font-bold text-base">Non-Veg Items</button>
           <button className="bg-[#45A29E] rounded-md h-9 font-bold text-base">Quick Foods</button>
           <button className="bg-[#45A29E] rounded-md h-9 font-bold text-base">Snacks</button>
         </div>
       </nav>
-      <div className="grid grid-cols-6 gap-5">
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
-        
+      <div className="grid grid-cols-3 gap-5">
+      {nonVegData.map((items, index) => (
+          <NonCard
+          key={index}
+          imgUrl={items.imgUrl}
+          name={items.name}
+          />
+        ))}     
       </div>
     </section>
   )
