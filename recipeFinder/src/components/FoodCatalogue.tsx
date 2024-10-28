@@ -16,30 +16,39 @@ const handleNonveg = () =>{
 
   return ( 
     <section className="h-screen w-full p-3 flex gap-x-[30%]" style={{
-      backgroundColor: "#0B0C10"
+      backgroundColor: "#F0FFF0"
     }}>
-      <nav className=" border border-black flex flex-col w-[10rem] h-full p-2 gap-3 rounded-lg" style={{
-      backgroundColor: "#1F2833"
+      <nav className="flex flex-col w-[10rem] h-full p-2 gap-3 rounded-xl shadow-xl" style={{
+      backgroundColor: "white"
     }}>
-        <h1 className="text-center text-3xl font-medium"  style={{
-        fontFamily: "myFont",
-        color: "#66FCF1"
+        <h1 className="text-center text-3xl font-bold"  style={{
+        color: "#000",
+        textShadow: "1px 1px 2px #000000",
+        letterSpacing: "1.5px"
       }}>Your Pantry!</h1>
-      <hr className="bg-[#45A29E] h-[.2rem] "/>
-        <div className="flex flex-col gap-8 mt-5 " style={{
-          color: "#C5C6C7"
-        }}>
-          <button className="bg-[#45A29E] rounded-md h-9 font-bold text-base">History</button>
-          <button className="bg-[#45A29E] rounded-md h-9 font-bold text-base" onClick={handleVeg}>Veg Items</button>
-          <button className="bg-[#45A29E] rounded-md h-9 font-bold text-base" onClick={handleNonveg}>Non-Veg Items</button>
-          <button className="bg-[#45A29E] rounded-md h-9 font-bold text-base">Quick Foods</button>
-          <button className="bg-[#45A29E] rounded-md h-9 font-bold text-base">Snacks</button>
+      <hr className="h-[.2rem]" style={{
+            backgroundImage: "linear-gradient(to bottom right, purple, blue",
+          }}/>
+        <div className="flex flex-col gap-8 mt-5 ">
+          <button className="rounded-md h-9 font-bold text-base text-white" style={{
+            backgroundImage: "linear-gradient(to bottom right, #874CCC, #0E21A0",
+          }}>History</button>
+          <button className="rounded-md h-9 font-bold text-base text-white" onClick={handleVeg} style={{
+            backgroundImage: "linear-gradient(to bottom right, #874CCC, #0E21A0",
+          }}>Veg Items</button>
+          <button className="rounded-md h-9 font-bold text-base text-white" onClick={handleNonveg} style={{
+            backgroundImage: "linear-gradient(to bottom right, #874CCC, #0E21A0",
+          }}>Non-Veg Items</button>
+          <button className="rounded-md h-9 font-bold text-base text-white" style={{
+            backgroundImage: "linear-gradient(to bottom right, #874CCC, #0E21A0",
+          }}>Quick Foods</button>
+          <button className="rounded-md h-9 font-bold text-base text-white" style={{
+            backgroundImage: "linear-gradient(to bottom right, #874CCC, #0E21A0",
+          }}>Snacks</button>
         </div>
       </nav>
       <div className="flex items-center">
-        <h1 className="text-white text-4xl" style={{
-          fontFamily: "myFont"
-        }}>[Please choose your Items...]</h1>
+        <h1 className="font-semibold text-4xl">[Please choose your Items...]</h1>
       </div>
     </section>
   )

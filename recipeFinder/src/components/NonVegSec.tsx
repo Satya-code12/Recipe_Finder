@@ -35,22 +35,42 @@ const NonVegSec: React.FC = () => {
   const totalItems = quantities.reduce((total, quantity) => total + quantity, 0);
 
   return (
-    <section className="h-screen w-full p-3 flex gap-14" style={{ backgroundColor: "#0B0C10" }}>
-      <nav className="border border-black flex flex-col w-[10rem] h-full p-2 gap-3 rounded-lg" style={{ backgroundColor: "#1F2833" }}>
-        <h1 className="text-center text-3xl font-medium" style={{ fontFamily: "myFont", color: "#66FCF1" }}>Your Pantry!</h1>
-        <hr className="bg-[#45A29E] h-[.2rem]" />
-        <div className="flex flex-col gap-8 mt-5" style={{ color: "#C5C6C7" }}>
-          <button className="bg-[#45A29E] rounded-md h-9 font-bold text-base">History</button>
-          <button className="bg-[#45A29E] rounded-md h-9 font-bold text-base" onClick={handleVeg}>Veg Items</button>
-          <button className="bg-[#45A29E] rounded-md h-9 font-bold text-base">Non-Veg Items</button>
-          <button className="bg-[#45A29E] rounded-md h-9 font-bold text-base">Quick Foods</button>
-          <button className="bg-[#45A29E] rounded-md h-9 font-bold text-base">Snacks</button>
-          <button className="bg-[#45A29E] rounded-md h-9 flex justify-center items-center">
-            <ShoppingCart/> {totalItems}
-          </button>
+    <section className="h-screen w-full p-3 flex gap-14" style={{
+      backgroundColor: "#F0FFF0"
+    }}>
+      <nav className="flex flex-col w-[10rem] h-full p-2 rounded-xl shadow-xl" style={{
+      backgroundColor: "white"
+    }}>
+        <h1 className="text-center text-3xl font-bold"  style={{
+        color: "#000",
+        textShadow: "1px 1px 2px #000000",
+        letterSpacing: "1.5px"
+      }}>Your Pantry!</h1>
+        <hr className="h-[.2rem]" style={{
+            backgroundImage: "linear-gradient(to bottom right, purple, blue",
+          }}/>
+        <div className="flex flex-col gap-8 mt-5 ">
+          <button className="rounded-md h-9 font-bold text-base text-white" style={{
+            backgroundImage: "linear-gradient(to bottom right, #874CCC, #0E21A0",
+          }}>History</button>
+          <button className="rounded-md h-9 font-bold text-base text-white" onClick={handleVeg} style={{
+            backgroundImage: "linear-gradient(to bottom right, #874CCC, #0E21A0",
+          }}>Veg Items</button>
+          <button className="rounded-md h-9 font-bold text-base text-white" style={{
+            backgroundImage: "linear-gradient(to bottom right, #874CCC, #0E21A0",
+          }}>Non-Veg Items</button>
+          <button className="rounded-md h-9 font-bold text-base text-white" style={{
+            backgroundImage: "linear-gradient(to bottom right, #874CCC, #0E21A0",
+          }}>Quick Foods</button>
+          <button className="rounded-md h-9 font-bold text-base text-white" style={{
+            backgroundImage: "linear-gradient(to bottom right, #874CCC, #0E21A0",
+          }}>Snacks</button>
+          <button className="rounded-md h-9 font-bold text-base flex justify-center items-center text-white" style={{
+            backgroundImage: "linear-gradient(to bottom right, #874CCC, #0E21A0",
+          }}><ShoppingCart/> {totalItems}</button>
         </div>
       </nav>
-      <div className="flex flex-col gap-5">
+      <div className="grid grid-cols-4 gap-x-8">
         {nonVegData.map((item, index) => (
           <NonCard
             key={index}

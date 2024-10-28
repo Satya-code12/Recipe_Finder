@@ -13,7 +13,7 @@ const nonVegData : nonVegDataProps [] = [
   name : "Egg"
  },
  {
-  imgUrl : "https://rukminim2.flixcart.com/image/850/1000/l3dcl8w0/meat/0/x/5/10-500-mutton-curry-cut-curry-cut-mutton-meativorous-original-imageg8rqb92bepb.jpeg?q=90&crop=false",
+  imgUrl : "https://pranikhamar.in/wp-content/uploads/2024/03/Goat-Meat.jpeg",
   name : "Mutton"
  },
  {
@@ -21,11 +21,11 @@ const nonVegData : nonVegDataProps [] = [
   name : "Beef"
  },
  {
-  imgUrl : "https://gourmet-foods.in/wp-content/uploads/2021/02/Prawn-Shrimp.png",
+  imgUrl : "https://5.imimg.com/data5/RX/SR/MY-50478869/fresh-prawn-500x500.jpg",
   name : "Prawn"
  },
  {
-  imgUrl : "https://img1.exportersindia.com/product_images/bc-small/2021/6/4290103/crabs-1622780843-5846679.jpeg",
+  imgUrl : "https://5.imimg.com/data5/ANDROID/Default/2021/1/TB/RY/AF/120696779/product-jpeg-500x500.jpg",
   name : "Crab"
  },
 ]
