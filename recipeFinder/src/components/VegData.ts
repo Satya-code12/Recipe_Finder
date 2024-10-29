@@ -33,10 +33,6 @@ const vegCardData: vegCardDataProps[] =[
   naame: "Lady Finger",
  },
  {
-  imageUrl: "https://www.jiomart.com/images/product/original/590003515/onion-1-kg-product-images-o590003515-p590003515-1-202408070949.jpg?im=Resize=(420,420)",
-  naame: "Onion",
- },
- {
   imageUrl: "https://seed2plant.in/cdn/shop/products/Beansseeds.jpg?v=1603967248",
   naame: "Green beans"
  },
@@ -51,10 +47,6 @@ const vegCardData: vegCardDataProps[] =[
  {
   imageUrl: "https://seed2plant.in/cdn/shop/products/greenpeas.jpg?v=1639212658",
   naame: "Peas"
- },
- {
-  imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDr6TxSU65t995cB7IJqr5f-OW2rD9XBdLyA&s",
-  naame: "Spinach"
  },
  {
   imageUrl: "https://www.bigbasket.com/media/uploads/p/xl/10000380_10-fresho-papaya-raw.jpg",

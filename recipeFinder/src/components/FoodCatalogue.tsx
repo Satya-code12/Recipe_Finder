@@ -15,7 +15,7 @@ const handleNonveg = () =>{
 }
 
   return ( 
-    <section className="h-screen w-full p-3 flex gap-x-[30%]" style={{
+    <section className="h-screen w-full p-3 flex gap-x-[20%]" style={{
       backgroundColor: "#F0FFF0"
     }}>
       <nav className="flex flex-col w-[10rem] h-full p-2 gap-3 rounded-xl shadow-xl" style={{
