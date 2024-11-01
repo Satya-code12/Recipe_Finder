@@ -20,7 +20,7 @@ const  Modal : React.FC<ModalProps> = ({onClose}) => {
   }
 
   return (
-    <div className='fixed inset-0 bg-black bg-opacity-35 backdrop-blur-sm flex justify-center items-center '>
+    <div className='fixed inset-0 bg-black bg-opacity-35 backdrop-blur-sm flex justify-center items-center'>
       <div className='fixed flex flex-col gap-5 h-[20rem] w-[35rem]'>
        <button className='place-self-end' onClick={onClose}><X className='text-white'/></button>
        <div className=' flex flex-col items-center pt-10 rounded-lg bg-cyan-100 h-[16rem]'>
