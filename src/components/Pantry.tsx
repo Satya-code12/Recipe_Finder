@@ -1,7 +1,7 @@
 import { useState } from "react"
 import "../App.css"
 import Navbar from "./Navbar"
-import Pantryitems from "./Pantryitems"
+import StockNavbar from "./StockNavbar"
 
 const Pantry : React.FC = () => {
 
@@ -12,12 +12,12 @@ const handleStock = () =>{
 }
 
   return ( 
-    <section className="h-screen w-full p-3 flex gap-x-[15%]" style={{
+    <section className="h-screen w-full p-3 flex gap-x-[13%]" style={{
       backgroundColor: "#F0FFF0"
     }}>
       <Navbar onClick = {handleStock}/>
       
-      {showItems && <Pantryitems />}
+      {showItems && <StockNavbar />}
     </section>
   )
 }
