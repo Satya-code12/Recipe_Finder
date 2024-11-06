@@ -1,23 +1,29 @@
-// type cardsProps ={
-//     imageUrl: string | undefined,
-//     naame: string | undefined
-//  };
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
+import CardActionArea from '@mui/material/CardActionArea';
 
-// const Cards: React.FC<cardsProps> = ({imageUrl, naame}) =>{
-//   return (
-
-//   <div className="bg-transparent border-[6px] border-white rounded-xl flex flex-col gap-1 h-48">
-//     <div className="flex justify-center">
-//     <img src={imageUrl} alt="" width={120} className="pt-1 rounded-xl"/>
-//     </div>
-//     <div className=" p-1 border-t-[4px] border-white font-semibold text-base"><p>{naame}</p></div>
-//     <div className="flex gap-4 p-1 border-t-[4px] border-white items-center justify-center ">
-//       <p className="font-medium text-sm text-blue-600">Quantity:</p>
-//       <div className="flex gap-3"><button className="font-extrabold hover:bg-blue-200 rounded-2xl w-3" >+</button>
-//       <button className="font-extrabold hover:bg-blue-200 rounded-2xl w-3">-</button></div></div>
-//   </div>
-//   );
-// };
-
-// export default Cards;
-
+export default function Cards() {
+  return (
+    <Card sx={{ maxWidth: 220 }} className='h-max'>
+      <CardActionArea>
+        <CardMedia
+          component="img"
+          height="140"
+          image="https://atanurrannagharrecipe.com/wp-content/uploads/2024/01/Kolkata-style-Mutton-Biriyani-Atanur-Rannaghar.jpg"
+          alt="green iguana"
+        />
+        <CardContent>
+          <Typography gutterBottom component="div">
+            <p className='text-lg'>Biriyani</p>
+          </Typography>
+          {/* <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+            Lizards are a widespread group of squamate reptiles, with over 6,000
+            species, ranging across all continents except Antarctica
+          </Typography> */}
+        </CardContent>
+      </CardActionArea>
+    </Card>
+  );
+}

@@ -1,9 +1,14 @@
-import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const ItemsList: React.FC = () => {
+
+const navigate = useNavigate()
+const showRecSection = () =>{
+  navigate("/RecipeSection")
+}
   return (
     <div className="container mx-auto">
-      <div className="relative overflow-auto rounded-lg shadow-md" style={{ height: '400px' }}>
+      <div className="relative overflow-auto rounded-lg shadow-md" style={{ height: '350px' }}>
         <table className="min-w-full ">
           <thead
             className="sticky top-0"
@@ -101,6 +106,10 @@ const ItemsList: React.FC = () => {
           </tbody>
         </table>
       </div>
+      <div className='my-4 flex justify-end'>
+        <button className="rounded-md h-9 p-1 font-bold text-base text-white" style={{
+            backgroundImage: "linear-gradient(to bottom right, #874CCC, #0E21A0",
+          }} onClick={showRecSection}>Start Cooking</button></div>
     </div>
   );
 };
