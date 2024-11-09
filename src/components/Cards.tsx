@@ -10,7 +10,6 @@ export default function Cards() {
   const [showInfo, setShowInfo] = useState(false);
 
   const handleCardClick = () => {
-    alert('Card clicked!');
     setShowInfo(true);
   };
 
