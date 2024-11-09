@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Modal from "../components/Modal";
+import Modal from "../components/ApiModal";
 // import bgImage from "../images/bg-img.jpg"
 import { SendHorizonal } from 'lucide-react';
 
@@ -16,7 +16,7 @@ const Home : React.FC = () => {
     }}>
         {/* Content */}
         {/* flex flex-col justify-center w-[60%] h-[20rem] px-4 text-justify mx-auto gap-8 shadow-2xl rounded-3xl backdrop-filter backdrop-blur-[50px] bg-opacity-10 border */}
-        <div className=' container my-auto mx-auto'>
+        <div className=' container my-auto mx-auto p-5'>
           <div className='text-black w-[30rem] flex flex-col text-shadow gap-y-6 '>
             <h1 className="text-[45px] font-extrabold font-custom " style={{
               letterSpacing: "1px",
