@@ -1,8 +1,8 @@
 type NavbarProps = {
-  onClick : () => void
+  onShow : () => void
 }
 
-const Navbar : React.FC<NavbarProps> = ({onClick}) => {
+const Navbar : React.FC<NavbarProps> = ({onShow}) => {
   return (
     <div>
       <nav className="flex flex-col w-[10rem] h-full p-2 gap-3 rounded-xl shadow-xl" style={{
@@ -19,7 +19,7 @@ const Navbar : React.FC<NavbarProps> = ({onClick}) => {
         <div className="flex flex-col gap-8 mt-5 ">
           <button className="rounded-md h-9 font-bold text-base text-white" style={{
             backgroundImage: "linear-gradient(to bottom right, #874CCC, #0E21A0",
-          }} onClick={onClick}>Stock</button>
+          }} onClick={onShow}>Stock</button>
           <button className="rounded-md h-9 font-bold text-base text-white"  style={{
             backgroundImage: "linear-gradient(to bottom right, #874CCC, #0E21A0",
           }}>Recipies</button>

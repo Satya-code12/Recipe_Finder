@@ -12,11 +12,12 @@ const handleStock = () =>{
   setShowItems(true);
 }
 
+
   return ( 
     <section className="h-screen w-full p-4 flex gap-x-[13%]" style={{
       backgroundColor: "#F4F4F4"
     }}>
-      <Navbar onClick = {handleStock}/>
+      <Navbar onShow = {handleStock}/>
       
       {showItems && <StockNavbar />}
     </section>

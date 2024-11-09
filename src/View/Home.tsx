@@ -20,11 +20,12 @@ const Home : React.FC = () => {
           <div className='text-black w-[30rem] flex flex-col text-shadow gap-y-6 '>
             <h1 className="text-[45px] font-extrabold font-custom " style={{
               letterSpacing: "1px",
+              // textShadow: "2px 2px #808080"
             }}>Our Guide... Your Flavourful Creations</h1>
             <p className='text-lg font-medium text-slate-700' style={{
               letterSpacing: "2px",
             }}>Never feel lost in the kitchen again. Our app provides clear, step-by-step instructions and helpful tips to ensure your cooking success. From prepping ingredients to plating your dish, we guide you through every stage of the cooking process. Let's make every dish a masterpiece!</p>
-            <button className='bg-white text-black font-medium rounded-lg w-36 flex gap-3 justify-center items-center h-10 shadow-lg hover:bg-[#6495ed]' onClick={()=>setShowModal(true)}>
+            <button className='bg-white text-black font-medium rounded-lg w-36 flex gap-3 justify-center items-center h-10 shadow-lg shadow-slate-500 hover:bg-[#6495ed]' onClick={()=>setShowModal(true)}>
               Lets Start <SendHorizonal /></button>
           </div>
         </div>

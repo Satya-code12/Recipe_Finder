@@ -1,13 +1,10 @@
 import Cards from "./Cards"
-import Navbar from "./Navbar"
 
-const Recipies = () => {
+const Recipies : React.FC = () => {
   return (
     <section className="h-full w-full p-4 flex gap-x-[10%]" style={{
       backgroundColor: "#F4F4F4"
     }}>
-     
-     <Navbar />
 
       <div className=" flex flex-col gap-4">
       <h1 className="font-custom text-2xl font-bold"> Recipies </h1>
